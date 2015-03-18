@@ -1,0 +1,32 @@
+{
+  "name": "stan",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "Hal Henke",
+  "license": "ISC",
+  "scripts": {
+    "sendMail": "node_modules/coffee-script/bin/coffee nodeMailer.coffee",
+    "devServe": "live-server campaign/page",
+    "build": "gulp"
+    },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-inline-css": "^2.0.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-savefile": "^0.1.1",
+    "gulp-sourcemaps": "^1.5.0"
+  },
+  "dependencies": {
+    "nodemailer": "^1.3.2"
+  }
+}

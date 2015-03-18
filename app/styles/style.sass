@@ -1,0 +1,95 @@
+// Custom Stuff
+@import "bower_components/foundation/scss/foundation.scss"
+
+
+$stan-blue: rgb(0, 137, 255)
+$stan-button: rgb(0, 153, 255)
+$footer-links: rgb(171, 174, 166)
+
+@font-face
+  font-family: "AbrilFatface"
+  src: local("../fonts/AbrilFatface-Regular.ttf")
+@font-face
+  font-family: "AlfaSlabOne"
+  src: local("../fonts/AlfaSlabOne-Regular.ttf")
+@font-face
+  font-family: "ChangaOne-Italic"
+  src: local("../fonts/ChangaOne-Italic.ttf")
+@font-face
+  font-family: "ChangaOne-Regular"
+  src: local("../fonts/ChangaOne-Regular.ttf")
+@font-face
+  font-family: "EBGaramond"
+  src: local("../fonts/EBGaramond-Regular.ttf")
+@font-face
+  font-family: "PoiretOne"
+  src: local("../fonts/PoiretOne-Regular.ttf")
+@font-face
+  font-family: "UbuntuCondensed"
+  src: local("../fonts/UbuntuCondensed-Regular.ttf")
+
+body
+  background-color: whitesmoke
+
+.row.header
+  background-color: $stan-blue
+  h1
+    color: white
+    font:
+      weight: bold
+      size: 3.5rem
+  h3
+    color: white
+    font:
+      weight: lighter
+      size: 1.5rem
+
+.stan
+  color: black
+  font:
+    weight: bold
+    size: 3rem
+
+
+.row.promo-image
+  a.button
+    margin:
+      top: -8rem
+      left: 40rem
+    span
+      padding:
+        left: 0.5rem
+
+@mixin inset
+  padding:
+    top: 1rem
+    left: 1rem
+    right: 1rem
+
+.row.promo-text
+  @include inset
+
+.row.promo-link
+  @include inset
+  a.button.large
+    span
+      padding:
+        left: 1rem
+
+a.button
+  background-color: $stan-button
+  font:
+    weight: lighter
+
+footer.row
+  background-color: black
+  .company-info
+    margin-top: 1rem
+    p
+      color: grey
+  .links
+    margin-bottom: 1rem
+    a
+      color: $footer-links
+      &:hover
+        color: $stan-blue
