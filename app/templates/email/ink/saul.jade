@@ -1,0 +1,96 @@
+doctype strict
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width')
+    style
+      include ../../../../bower_components/ink/css/ink.css
+    style
+      include ink_saul.css
+    style
+      include ../../../../campaign/page/css/style_email.css
+  body
+    table.body
+      tr
+        td.center(align='center', valign='top')
+          center
+            table.container
+              tr
+                td
+                  a(href="https://www.stan.com.au/")
+                    table.row.header
+                      tr
+                        td.wrapper.offset-by-two
+                          table.one.columns
+                            tr
+                              td
+                                h1.stan Stan.
+                              td.expander
+                        td.wrapper.last
+                          table.four.columns
+                            tr
+                              td
+                                h3.slogan THE BIGGEST DEAL IN ENTERTAINMENT
+                              td.expander
+                  table.row.promo-image
+                    tr
+                      td.wrapper.last
+                        table.twelve.columns
+                          tr
+                            td.center
+                              center
+                                //- img(width='580', height='300', src="../images/better-call-saul.jpg")
+                                img.center(src="cid:unique@kreata.ee")
+                            td.expander
+                          tr
+                            td
+                              a.button.large: i.fa.fa-caret-right
+                                span Watch the clip here
+                            td.expander
+                  table.row.promo-text
+                    tr
+                      td.wrapper.last
+                        table.twelve.columns
+                          tr
+                            td
+                              include ../../partials/_saul_promo
+                            td.expander
+                  table.row.promo-link
+                    tr
+                      td.wrapper.last
+                        table.twelve.columns
+                          tr
+                            td
+                              table.row
+                                tr
+                                  td
+                                    a.button.large Watch the clip here
+                                      span: i.fa.fa-long-arrow-right
+                              table.row
+                                tr
+                                  td
+                                    h2.stan Stan.
+                            td.expander
+
+                  table.row.footer
+                    tr
+                      td
+                        table.row
+                          tr
+                            td.wrapper.offset-by-one.last
+                              table.twelve.columns.company-info
+                                tr
+                                  td
+                                    p StreamCo Media Pty Ltd
+                                    p ABN 94 56 34 23
+                                  td.expander
+                        table.row
+                          tr
+                            td.wrapper.offset-by-one.last
+                              table.twelve.columns.links
+                                tr
+                                  td.four.sub-columns.black-link
+                                    a(href="#") Unsubscribe
+                                  td.four.sub-columns.black-link.last
+                                    a(href="https://www.stan.com.au/privacy-policy") Privacy Policy
+                                  td.expander
