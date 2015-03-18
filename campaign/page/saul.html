@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/bower.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/templates.js"></script>
+  </head>
+  <body ng-app="saul">
+    <div class="row header"><a href="https://www.stan.com.au/">
+        <div class="small-offset-3 small-2 columns">
+          <h1 class="stan">Stan.</h1>
+        </div>
+        <div class="small-4 columns">
+          <h3>THE BIGGEST DEAL IN ENTERTAINMENT</h3>
+        </div>
+        <div class="small-3 columns"></div></a></div>
+    <ng-view></ng-view>
+    <div class="row promo-text">
+      <h2 class="stan">Stan.</h2>
+    </div>
+    <footer class="row">
+      <div class="row">
+        <div class="small-offset-1 small-6 columns company-info">
+          <p>StreamCo Media Pty Ltd</p>
+          <p>ABN 94 56 34 23</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-offset-1 small-6 columns links">
+          <div class="small-3 columns"><a href="#">Unsubscribe</a></div>
+          <div class="small-4 columns"><a href="https://www.stan.com.au/privacy-policy">Privacy Policy</a></div>
+        </div>
+      </div>
+    </footer>
+    <script>$(document).foundation();</script>
+  </body>
+</html>
